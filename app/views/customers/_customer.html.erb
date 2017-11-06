@@ -1,0 +1,10 @@
+<h1>All Customers</h1>
+<div class="customer">
+  <% @customers.each do |customer| %>
+    <h2><%= customer.full_name %></h2>
+    <p><%= image_tag customer.image %></p>
+    <p><strong>Notes:</strong> <%= customer.notes %></p>
+    <p>customer.phone_number</p>
+    <p>customer.email_address</p>
+  <% end %>
+</div>
