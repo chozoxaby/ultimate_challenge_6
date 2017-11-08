@@ -1,4 +1,2 @@
 <h1>All Customers</h1>
-<% @customers.each do |customer| %>
-  <%= render partial: 'customer', object: customer %>
-<% end %>
+<%= render partial: 'customer', object: @customers %>
