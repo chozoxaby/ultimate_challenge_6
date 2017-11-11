@@ -2,6 +2,12 @@
   <div class="customer">
     <h2><%= customer.full_name %></h2>
     <p><%= image_tag customer.image %></p>
+    <p><strong>Province:</strong> 
+    <% if customer.province_id.nil? %>
+      Unknown
+    <% else %>
+      <%= customer.province.name %>
+    <% end %>
     <p><%= customer.phone_number %></p>
     <p><%= customer.email_address %></p>
   </div>
